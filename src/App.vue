@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <HomeComp />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import HomeComp from "./components/HomeComp.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    HomeComp,
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style>
+:root {
+  --dark-blue: #0055a4;
+  --blue: #a0cae2;
+  --light-blue: #f4f8fa;
+  --black: #313131;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
