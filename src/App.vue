@@ -20,7 +20,7 @@ export default {
   --light-blue: #f4f8fa;
   --black: #313131;
   --white: #ffffff;
-  --max-width-element: 93%;
+  --general-padding: 4vw;
 
   --main-font: "Inter", sans-serif;
   --title-font: "Nexa Demo", sans-serif;

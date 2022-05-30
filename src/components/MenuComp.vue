@@ -43,9 +43,10 @@ export default {
 .main-container {
   position: absolute;
   top: 70px;
-  right: -100vw;
-  width: 100%;
-  height: 100vh;
+  left: -100vw;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  padding: 0 var(--general-padding);
   background-color: var(--white);
   display: flex;
   flex-direction: column;
@@ -64,14 +65,15 @@ export default {
 
 .main-container ul li a {
   text-decoration: none;
+  font-weight: bold;
 }
 .main-container .main-container__menu-list {
   margin-bottom: 20vh;
   gap: 30px;
 }
 .main-container .main-container__menu-list .menu-list__item a {
-  font-size: 2.2rem;
-  line-height: 2.3rem;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
   color: var(--black);
 }
 .main-container .main-container__menu-list .menu-list__item a:hover {
@@ -109,9 +111,8 @@ export default {
 }
 
 .main-container .main-container__contacts-list .contacts-list__item .text {
-  font-size: 1.6rem;
-  line-height: 2.1rem;
-  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.2rem;
   color: var(--dark-blue);
 }
 .main-container
@@ -122,10 +123,10 @@ export default {
 }
 
 .main-container--open {
-  transform: translateX(-100vw);
+  transform: translateX(100vw);
 }
 .main-container--closed {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 @media (min-width: 980px) {
@@ -141,11 +142,22 @@ export default {
     transform: translateX(0);
     width: 100%;
     height: 100%;
+    padding: 0;
   }
   .main-container .main-container__menu-list .menu-list__item a,
-  .main-container .main-container__contacts-list .contacts-list__item a {
+  .main-container .main-container__contacts-list .contacts-list__item .text {
     font-size: 1.6rem;
     line-height: 2.1rem;
+    font-weight: normal;
+  }
+  .main-container .main-container__contacts-list .contacts-list__item .text {
+    font-weight: bold;
+  }
+  .main-container
+    .main-container__contacts-list
+    .contacts-list__item:nth-child(1)
+    a {
+    font-weight: bold;
   }
   .main-container
     .main-container__contacts-list
@@ -164,4 +176,3 @@ export default {
   }
 }
 </style>
-*/

@@ -31,16 +31,15 @@ export default {
 header {
   height: 70px;
   width: 100%;
-  max-width: var(--max-width-element);
   background-color: var(--white);
-  padding: 20px 0;
+  padding: 20px var(--general-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
-  left: 50%;
-  left: calc((100% - var(--max-width-element)) / 2);
+  left: 0;
+  z-index: 1;
 }
 img {
   height: 100%;
