@@ -68,7 +68,7 @@ export default {
   font-weight: bold;
 }
 .main-container .main-container__menu-list {
-  margin-bottom: 20vh;
+  margin-bottom: 70px;
   gap: 30px;
 }
 .main-container .main-container__menu-list .menu-list__item a {

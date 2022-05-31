@@ -13,7 +13,7 @@
   place-content: center;
   position: absolute;
   right: var(--general-padding);
-  bottom: 10vh;
+  bottom: -75px;
   width: 130px;
   height: 130px;
   color: var(--dark-blue);
@@ -31,7 +31,7 @@
   .know-more {
     position: absolute;
     left: var(--general-padding);
-    bottom: 10vh;
+    bottom: 100px;
     width: 142px;
     height: 142px;
     color: var(--white);
