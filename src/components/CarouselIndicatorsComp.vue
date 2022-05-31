@@ -32,6 +32,7 @@ export default {
   height: 6px;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
   background: var(--blue);
 }
 

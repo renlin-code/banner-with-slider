@@ -26,7 +26,9 @@
   background: var(--light-blue);
   border: 1.5px solid var(--blue);
 }
-
+.know-more:hover {
+  background: var(--white);
+}
 @media (min-width: 650px) {
   .know-more {
     position: absolute;
@@ -38,6 +40,9 @@
     border: 1.5px solid var(--white);
     font-size: 1rem;
     line-height: 1.2rem;
+    background: none;
+  }
+  .know-more:hover {
     background: none;
   }
   .know-more .know-more__airplane-radius {
