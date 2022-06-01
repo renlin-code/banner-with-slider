@@ -97,6 +97,7 @@ export default {
       } else {
         this.prev(step);
       }
+      this.stopSlideTimer();
     },
   },
   mounted() {
