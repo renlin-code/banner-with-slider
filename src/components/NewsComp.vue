@@ -83,9 +83,13 @@ export default {
     color: var(--white);
   }
   .news__text-container .text-container__title {
+    font-size: 4.2rem;
+    line-height: 4.6rem;
     width: 70vw;
   }
   .news__text-container .text-container__text {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     width: 50vw;
   }
   .news .news__image {
