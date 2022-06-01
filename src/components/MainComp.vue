@@ -2,7 +2,12 @@
   <main>
     <!-- <button @click="prev">Prev</button>
     <button @click="next">Next</button> -->
-    <div class="main__news-carousel">
+    <div
+      @touchstart="touchStart"
+      @touchmove="touchMove"
+      @touchend="touchEnd"
+      class="main__news-carousel"
+    >
       <div class="news-carousel__inner">
         <NewsComp
           v-for="{ id, title, description, url } in allSlides"
@@ -58,6 +63,8 @@ export default {
     currentSlide: 0,
     slideInterval: null,
     direction: "right",
+    startingX: null,
+    movingX: null,
   }),
   methods: {
     setCurrentSlide(index) {
@@ -98,6 +105,21 @@ export default {
         this.prev(step);
       }
       this.stopSlideTimer();
+    },
+    touchStart(evt) {
+      this.startingX = evt.touches[0].clientX;
+    },
+    touchMove(evt) {
+      this.movingX = evt.touches[0].clientX;
+    },
+    touchEnd() {
+      if (this.startingX + 100 < this.movingX) {
+        this.prev();
+        this.stopSlideTimer();
+      } else if (this.startingX - 100 > this.movingX) {
+        this.next();
+        this.stopSlideTimer();
+      }
     },
   },
   mounted() {
