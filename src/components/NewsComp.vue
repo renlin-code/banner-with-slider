@@ -28,7 +28,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 60px;
+  gap: 6px;
   position: absolute;
   top: 0;
   right: 0;
@@ -55,15 +55,6 @@ export default {
   height: 30vh;
   object-fit: cover;
 }
-
-/* .news {
-  margin: 0 auto;
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-} */
 
 .slide-in-enter-active,
 .slide-in-leave-active,

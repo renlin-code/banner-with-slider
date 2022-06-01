@@ -19,12 +19,14 @@ export default {
 
 <style scoped>
 .carousel-indicators {
+  position: absolute;
+  bottom: 40px;
+  left: var(--general-padding);
   width: 50vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 6px;
-  margin: var(--general-padding) 10px 0;
 }
 
 .indicator {

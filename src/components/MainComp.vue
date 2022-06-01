@@ -15,13 +15,13 @@
           :direction="direction"
         />
       </div>
+      <CarouselIndicatorsComp
+        :total="allSlides.length"
+        :currentIndex="currentSlide"
+        @switch="switchSlide($event)"
+      />
+      <KnowMoreComp />
     </div>
-    <CarouselIndicatorsComp
-      :total="allSlides.length"
-      :currentIndex="currentSlide"
-      @switch="switchSlide($event)"
-    />
-    <KnowMoreComp />
   </main>
 </template>
 
