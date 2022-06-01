@@ -60,7 +60,7 @@ export default {
 .slide-in-leave-active,
 .slide-out-enter-active,
 .slide-out-leave-active {
-  transition: all 1s ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .slide-in-enter-from {
   transform: translateX(100%);
