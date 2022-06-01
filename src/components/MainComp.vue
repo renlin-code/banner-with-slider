@@ -132,6 +132,4 @@ main .main__news-carousel {
   height: 80vh;
   overflow: hidden;
 }
-
-/* ---- */
 </style>
